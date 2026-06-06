@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Resume</title>
+    <style>
+        /* Estilos básicos para presentación rápida */
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.6; margin: 0; padding: 1rem; color: #111; background: #f9f9fb; }
+        header, footer { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 1rem; }
+        header { display:flex; gap:1rem; align-items:center; }
+        img.profile { width:96px; height:96px; object-fit:cover; border-radius:50%; border:2px solid #e5e7eb; }
+        nav a { margin-right:0.75rem; color:#0366d6; text-decoration:none; }
+        main { display:block; gap:1rem; }
+        section { background:#fff; padding:1rem; border-radius:8px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); margin-bottom:1rem; }
+        h1,h2 { margin:0 0 0.5rem 0; }
+        ul { margin:0.25rem 0 0 1.25rem; }
+        .job { margin-bottom:0.5rem; }
+        .muted { color:#6b7280; font-size:0.95rem; }
+        footer { text-align:center; font-size:0.9rem; color:#6b7280; }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Reemplaza "images/profile.jpg" por la ruta de tu foto -->
+        <img class="profile" src="./assets/images/perfil.png" alt="Foto de perfil" />
+        <div>
+            <h1>Nombre Apellido</h1>
+            <p class="muted">Telecom Engineer · Front-end Developer · HTML · CSS · JavaScript · Python</p>
+            <nav aria-label="Navegación del sitio">
+                <a href="index.html">Resume</a>
+                <a href="./public/contact.html">Contact</a>
+                <!-- Puedes agregar más páginas: projects.html, portfolio.html, etc. -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="summary">
+            <h2>Resumen / Objetivo</h2>
+            <p>
+                Ingeniero de Planta Externa con 10 años de experiencia creando soluciones innovadoras.
+                Busco oportunidades para contribuir en proyectos front-end usando HTML, CSS y JavaScript,
+                y mejorar la experiencia de usuario mediante buenas prácticas de diseño y rendimiento.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <strong>Ingeniero en Electrónica y Telecomunicaciones</strong> — ESPOL
+                    <div class="muted">2006 — 2011</div>
+                </li>
+                <li>
+                    <strong>Maestría en TIC</strong> — UCACUE
+                    <div class="muted">2020</div>
+                </li>
+                <li>
+                    <strong>Maestría en Educación - Mención Matemáticas</strong> — UTPL
+                    <div class="muted">2025</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experiencia Laboral</h2>
+
+            <article class="job">
+                <h3>Fiscalizador de Planta Externa — CNT EP</h3>
+                <div class="muted">Oct 2015 — Presente</div>
+                <ul>
+                    <li>Gestión de mantenimiento preventivo y correctivo de Planta externa GPON</li>
+                    <li>Fiscalización de construcciones ODN en campo</li>
+                    <li>Desarrollo de aplicativos de productividad para agilitar procesos internos</li>
+                    <li>Colaboración con equipos de ingeniería para optimizar despliegues y resolver incidencias</li>
+                    <li>Capacitación a técnicos en nuevas tecnologías y procedimientos de mantenimiento</li>
+                </ul>
+            </article>
+                <article class="job">
+                <h3>Ingeniero RF Junior SESTEL S.A - Konectado Ecuador</h3>
+                <div class="muted">May 2012 — Sept 2015</div>
+                <ul>
+                    <li>Swap ZTE-Movistar</li>
+                    <li>Optimizacion IT Movistar</li>
+                    <li>Proyecto CLARO IT</li>
+                </ul>
+            </article>
+            <article class="job">
+                <h3>Ingeniero en Infraestructura y Operaciones — Level 3 Ecuador</h3>
+                <div class="muted">Jul 2020 — Dic 2021</div>
+                <ul>
+                    <li>Mantenimiento de nodos</li>
+                    <li>Monitoreo de telepuerto de Guayaquil</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5 semántico y accesible</li>
+                <li>CSS3 (Flexbox, Grid, responsive design)</li>
+                <li>JavaScript (ES6+), Python</li>
+                <li>Control de versiones con Git / GitHub</li>
+                <li>Herramientas: VS Code, Chrome DevTools</li>
+                <li>Microsoft Office Suite</li>
+                <li>Google Workspace</li>
+                <li>Comunicación efectiva y trabajo en equipo</li>
+                <li>Inglés intermedio (B2)</li>
+            </ul>
+        </section>
+
+        <section id="awards">
+            <h2>Reconocimientos y Certificaciones</h2>
+            <ul>
+                <li>Certificado en Desarrollo Web — Complete Full-Stack Web Development Bootcamp (2026)</li>
+                <li>Smart City: IoT Solutions and Technologies Management (Nov 2025)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jaime Izquierdo — © <span id="year"></span>. Todos los derechos reservados.</p>
+        <script>
+            // script pequeño para actualizar el año en el pie de página
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <!-- Notas:
+             - Crea archivos hobbies.html y contact.html en la misma carpeta para completar el sitio multipágina.
+             - Sustituye el contenido de ejemplo por tu información real.
+             - Sube todo el proyecto a un repositorio en GitHub y publica con GitHub Pages. -->
+</body>
+</html>
